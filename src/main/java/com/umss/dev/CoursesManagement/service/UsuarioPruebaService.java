@@ -29,5 +29,9 @@ public class UsuarioPruebaService {
 		logger.info("se esta obteniendo un usuario especifico");
 		return usuarioPruebaRepository.findById(id);
 		}
+	public UsuarioPrueba findByUsername(String username) {
+		UsuarioPrueba u = usuarioPruebaRepository.findbyUsername(username);
+		return u;
+	}
 	
 }

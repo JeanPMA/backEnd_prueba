@@ -31,4 +31,9 @@ public class UsuarioPruebaController {
 	return usuarioPruebaService.findById(id);
 	}
 
+	@GetMapping("usuarios/{username}")
+    public UsuarioPrueba findByUsername(@PathVariable("username") String username){
+        return usuarioPruebaService.findByUsername(username);
+    }
+
 }
