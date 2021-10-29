@@ -25,13 +25,10 @@ public class UsuarioPruebaService {
 	public List<UsuarioPrueba> findAll() {
 		return usuarioPruebaRepository.findAll();
 	}
-	public Optional<UsuarioPrueba> findById(Long id){
-		logger.info("se esta obteniendo un usuario especifico");
-		return usuarioPruebaRepository.findById(id);
-		}
+	
 	public UsuarioPrueba findByUsername(String username) {
-		UsuarioPrueba u = usuarioPruebaRepository.findbyUsername(username);
-		return u;
-	}
+		logger.info("se esta obteniendo un usuario especifico");
+		return usuarioPruebaRepository.findbyUsername(username);
+		}
 	
 }

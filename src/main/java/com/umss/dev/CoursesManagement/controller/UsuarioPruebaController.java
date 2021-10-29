@@ -26,10 +26,7 @@ public class UsuarioPruebaController {
 		return usuarioPruebaService.findAll();
 		
 	}
-	@GetMapping("/usuarios/{id}")
-	public Optional<UsuarioPrueba> obtenerUsuario(@PathVariable Long id){
-	return usuarioPruebaService.findById(id);
-	}
+	
 
 	@GetMapping("usuarios/{username}")
     public UsuarioPrueba findByUsername(@PathVariable("username") String username){
